@@ -1,0 +1,7 @@
+// Git commands
+- git init = initialize git repo
+- git satus = list of files to be commited
+- git add . = adding all files to the repo
+- git commit -m "message" = Commits on git
+
+// Laravel Mix
