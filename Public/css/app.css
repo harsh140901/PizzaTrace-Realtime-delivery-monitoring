@@ -45,3 +45,53 @@ section.hero div button:hover {
   border-color: #fff;
   color: #fff;
 }
+
+.goback_btn {
+  background: #FE5F1E;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.goback_btn:hover {
+  background: #b23301;
+}
+
+section.cart {
+  background: #F8F8F8;
+}
+section.cart .amount {
+  color: #FE5F1E;
+}
+section.cart .ordernow {
+  background: #FE5F1E;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+section.cart .ordernow:hover {
+  background: #b23301;
+}
+section.cart .logintocnt {
+  background: #FE5F1E;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+section.cart .logintocnt:hover {
+  background: #b23301;
+}
+
+section.login {
+  background: #F8F8F8;
+}
+section.login .text-sm {
+  color: #232323;
+}
+section.login .frgt:hover {
+  color: #FE5F1E;
+}
+section.login .loginbtn {
+  background: #FE5F1E;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+section.login .loginbtn:hover {
+  background: #b23301;
+}

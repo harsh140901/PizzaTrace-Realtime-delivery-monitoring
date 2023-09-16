@@ -49,3 +49,61 @@ section.hero div button{
     color: $pure;
   }
 }
+
+.goback_btn{
+  background: $primary;
+  color: $pure;
+  transition: $smooth;
+  &:hover {
+    background: $primary-hover;
+  }
+}
+
+section.cart {
+  background: $secondary;
+
+  .amount {
+    color: $primary;
+  }
+
+  .ordernow{
+    background: $primary;
+    color: $pure;
+    transition: $smooth;
+    &:hover {
+      background: $primary-hover;
+    }
+  }
+
+  .logintocnt{
+    background: $primary;
+    color: $pure;
+    transition: $smooth;
+    &:hover {
+      background: $primary-hover;
+    }
+  }
+}
+
+section.login {
+
+  background: $secondary;
+
+  .text-sm {
+    color: $dark;
+  }
+  .frgt {
+    &:hover{
+      color: $primary;
+    }
+  }
+  .loginbtn {
+    background: $primary;
+    color: $pure;
+    transition: $smooth;
+    &:hover {
+      background: $primary-hover;
+    }
+  }
+}
+
