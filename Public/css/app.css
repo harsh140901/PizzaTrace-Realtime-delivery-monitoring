@@ -335,6 +335,9 @@ section.login .loginbtn {
 section.login .loginbtn:hover {
   background: #b23301;
 }
+section.login .err {
+  color: rgb(236, 13, 13);
+}
 
 .noty_theme__mint {
   border-radius: 50px !important;

@@ -10,7 +10,8 @@ function updateCart(pizza){
     new Noty({
       type: 'success',
       timeout : 1000,
-      text: "Item is added to cart."
+      text: "Item is added to cart.",
+      progressBar:false
     }).show();
   })
 }

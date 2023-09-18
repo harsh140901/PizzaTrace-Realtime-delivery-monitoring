@@ -22,7 +22,8 @@ function updateCart(pizza) {
     new (noty__WEBPACK_IMPORTED_MODULE_0___default())({
       type: 'success',
       timeout: 1000,
-      text: "Item is added to cart."
+      text: "Item is added to cart.",
+      progressBar: false
     }).show();
   });
 }

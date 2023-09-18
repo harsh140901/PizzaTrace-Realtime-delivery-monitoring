@@ -3,12 +3,14 @@
   <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
 
     <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-      <form class="space-y-6" action="#" method="POST">
-
+      <form action="/login" class="space-y-6" action="#" method="POST">
+          <% if(messages.error) {%>
+          <span class="err text-sm"><%= messages.error %></span>
+          <% } %>
         <div>
           <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
           <div class="mt-2">
-            <input id="email" name="email" type="email" autocomplete="email" required class="w-full rounded-full  py-1.5 text-gray-900 shadow-sm border border-gray-300">
+            <input id="email" name="email" type="email" autocomplete="email" required class="w-full rounded-full px-3 py-1.5 text-gray-900 shadow-sm border border-gray-300">
           </div>
         </div>
   
@@ -20,7 +22,7 @@
             </div>
           </div>
           <div class="mt-2">
-            <input id="password" name="password" type="password" autocomplete="current-password" required class="w-full rounded-full  py-1.5 text-gray-900 shadow-sm border border-gray-300 ">
+            <input id="password" name="password" type="password" autocomplete="current-password" required class="w-full rounded-full px-3 py-1.5 text-gray-900 shadow-sm border border-gray-300 ">
           </div>
         </div>
   
