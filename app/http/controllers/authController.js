@@ -3,6 +3,10 @@ const User = require('../../models/user');
 const bcrypt = require('bcrypt');
 function authController(){
 
+  const _getRedirectUrl = (req) => {
+    return req.user.role === 'admin' ? '/admin/orders' : '/customer/orders'
+  }
+
   return {
     
     login(req,res){
@@ -30,7 +34,7 @@ function authController(){
             return next(err);
           }
 
-          return res.redirect('/');
+          return res.redirect(_getRedirectUrl(req));
         });
 
       })(req,res,next);

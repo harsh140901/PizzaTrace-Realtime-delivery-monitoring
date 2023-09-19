@@ -18,6 +18,8 @@
     "express-ejs-layouts": "^2.5.1",
     "express-flash": "^0.0.2",
     "express-session": "^1.17.3",
+    "express-validator": "^7.0.1",
+    "moment": "^2.29.4",
     "mongoose": "^7.5.2",
     "noty": "^3.2.0-beta-deprecated",
     "passport": "^0.6.0",
