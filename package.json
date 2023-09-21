@@ -19,11 +19,13 @@
     "express-flash": "^0.0.2",
     "express-session": "^1.17.3",
     "express-validator": "^7.0.1",
+    "http": "^0.0.1-security",
     "moment": "^2.29.4",
     "mongoose": "^7.5.2",
     "noty": "^3.2.0-beta-deprecated",
     "passport": "^0.6.0",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "socket.io": "^4.7.2"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
