@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "serve": "node server.js",
+    "start": "node server.js",
     "dev": "nodemon server.js",
     "development": "mix",
     "watch": "npx mix watch",
