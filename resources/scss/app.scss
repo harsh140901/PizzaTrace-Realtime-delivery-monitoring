@@ -179,55 +179,68 @@ section.status {
 .status-box ul li:nth-child(5) span:before {
   content: '\f582';
 }
-
-
 .status-box ul li {
   position: relative;
 }
-
 // Line
 .status-box ul li:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -6px;
-  width: 2px;
-  height: 100%;
-  background: $dark;
-  margin-top: 10px;
+ content: '';
+ position: absolute;
+ top: 0;
+ left: -6px;
+ width: 2px;
+ height: 100%;
+ background: $dark;
+ margin-top: 10px;
 }
 // Last dot
 .status-box ul li:nth-child(5) span:after {
-   box-shadow:0 20px 1px 20px $secondary;
+  box-shadow:0 20px 1px 20px $secondary;
 }
 
 // line
 .status-box ul li.step-completed:before {
-   background: $gray;
+  background: $gray;
 }
 
 // dots
 .status-box ul li.step-completed span:after {
-   background: $gray;
+  background: $gray;
 }
 
 // text
 .status-box ul li.step-completed span {
-   color: $gray;
+  color: $gray;
 }
 
 // Current status
 .status-box ul li.current span {
-   color: $primary;
+  color: $primary;
 }
 
 .status-box ul li.current span:after {
-   background: $primary;
+  background: $primary;
 }
 
 .status-box ul li small {
-   float: right;
-   font-size: 14px;
-   margin-top: 8px;
+  float: right;
+  font-size: 14px;
+  margin-top: 8px;
 }
 
+@media(max-width:1060px) {
+  .container {
+      max-width: 90%;
+  }
+  table {
+     display: block;
+     overflow-x: auto;
+     white-space: nowrap;
+  }
+}
+
+@media(max-width: 768px) {
+  .status-box ul li span:before {
+      font-size: 34px;
+  }
+}

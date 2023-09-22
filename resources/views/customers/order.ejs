@@ -1,5 +1,5 @@
 <section class="orders light-section">
-  <div class="container ml-48 pl-32 mx-auto pt-12">
+  <div class="container mx-auto justify-center items-center pt-12 md:ml-48 md:ps-32">
       <h1 class="font-bold text-lg mb-4">All orders</h1>
       <% if(messages.success) { %>
       <div id="success-alert" class="w-1/2 flex items-center bg-green-500 text-white text-sm font-bold px-4 py-3"
@@ -11,10 +11,10 @@
           <p><%= messages.success %></p>
       </div>
       <% } %>
-      <table class="w-1/2 justify-center table-auto bg-white">
+      <table class="w-full lg:w-1/2 justify-center  bg-white">
           <thead>
               <tr>
-                  <th class="px-4 py-2 text-left">Orders</th>
+                  <th class="items-center text-left">Orders</th>
                   <!-- <th class="px-4 py-2 text-left">Phone</th>
                   <th class="px-4 py-2 text-left">Address</th> -->
                   <th class="px-4 py-2 text-left">Time</th>

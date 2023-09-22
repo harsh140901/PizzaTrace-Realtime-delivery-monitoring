@@ -16,8 +16,7 @@ const PORT = process.env.PORT || 3000;
 
 
 // Database connection
-const url = 'mongodb://127.0.0.1/pizza';
-mongoose.connect(url,{useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.MONGO_CONNECTION_URL,{useNewUrlParser: true, useUnifiedTopology: true });
 const connection = mongoose.connection;
 mongoose.connection
     .once('open', function () {
@@ -76,7 +75,10 @@ app.set('view engine' , 'ejs');
 
 // routes
 require('./routes/web')(app);
+app.use((req,res)=>{
+  res.status(404).render('erros/404');
 
+})
 
 // making server to listen request from client
 const server = app.listen(PORT, () => {
