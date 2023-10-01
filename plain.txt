@@ -5,3 +5,18 @@
 - git commit -m "message" = Commits on git
 
 // Laravel Mix
+
+// session cookie
+
+// passport authentication
+
+// axios
+
+//  AJAX call
+
+// AWS deployment
+
+-- ubuntu commands
+1. for mongodb
+- mongod --version = for verifying installation
+- sudo service mongodb start = for starting mongodb

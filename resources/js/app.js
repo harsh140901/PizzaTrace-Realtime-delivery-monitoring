@@ -97,5 +97,3 @@ socket.on('orderUpdated',(data) => {
   }).show();
   console.log(data);
 })
-
-
